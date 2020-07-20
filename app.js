@@ -31,7 +31,7 @@ while (numeriPc.length < 17) {
 }
 console.log(numeriPc);
 /// inserisci e confronta numeri
-for (var i = 1; i < 84; i++) {
+for (var i = 1; i < 85; i++) {
   InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
   if (checkArray(numeriUtente, InputNumero) == false && isNaN(InputNumero)== false) {
     numeriUtente.push(InputNumero);
