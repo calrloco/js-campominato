@@ -18,9 +18,13 @@ console.log(numeriPc);
 for(var i=0;i<10;i++){
     InputNumero = parseInt(prompt('inserisci un numero'));
     if (numeriPc.includes(InputNumero)){
-        alert('hai perso')
+        alert('Boom hai perso'+'hai tentato'+i+1+' volte');
+    }else{
+        numeriUtente.push(InputNumero);
     }
+    
 }
+console.log(numeriUtente);
 function checkArray(arr,num){
     for(var i=0;i<arr.length;i++){
         if(arr[i] == num){
