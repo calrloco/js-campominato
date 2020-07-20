@@ -31,7 +31,7 @@ var punteggio = i;
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
-  } else if (numeriUtente.length == 85) {
+  } else if (numeriUtente.length == 84) {
     alert("hai vinto punteggio: " + punteggio);
     location.reload();
     break;
