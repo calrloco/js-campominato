@@ -29,7 +29,6 @@ while (numeriPc.length < 17) {
   }
   i++;
 }
-console.log(numeriPc);
 /// inserisci e confronta numeri
 for (var i = 0; i <= 84; i++) {
   InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
