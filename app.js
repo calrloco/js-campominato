@@ -15,8 +15,10 @@ while (numeriPc.length < 16){
     i++;
 }
 console.log(numeriPc);
+/// inserisci e confronta numeri
 for(var i=0;i<4;i++){
     InputNumero = parseInt(prompt('inserisci un numero'));
+    numeriUtente.push(InputNumero);
     var punteggio = i+1;
     if (numeriPc.includes(InputNumero)){
         alert('Boom hai perso punteggio: '+punteggio);
