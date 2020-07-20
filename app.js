@@ -1,19 +1,26 @@
 var numeriPc = [];
 var numeriUtente = [];
 var InputNumero;
-var difficolta = prompt('iserire difficolta');
+var difficolta = prompt('iserire difficolta 0=facile 1=media 2=diffcile');
 var numeroDifficolta;
 // seleziona difficolta
 switch(difficolta){
     case '0':
        numeroDifficolta = 100;
+       alert('Difficolta facile selezionata');
        break;
        case '1':
        numeroDifficolta = 80;
+       alert('Difficolta media selezionata');
        break;
        case '2':
        numeroDifficolta = 50;
+       alert('Difficolta difficile selezionata');
        break;
+       
+       default:
+          numeroDifficolta = 100;
+          alert('Difficolta non selezionata selezionata automaticamete dal Pc difficolta facile');
 }
 var i = 0;
 while (numeriPc.length < 17) {
