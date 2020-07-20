@@ -17,12 +17,13 @@ while (numeriPc.length < 16){
 console.log(numeriPc);
 for(var i=0;i<10;i++){
     InputNumero = parseInt(prompt('inserisci un numero'));
+    var punteggio = i+1;
     if (numeriPc.includes(InputNumero)){
-        alert('Boom hai perso'+'hai tentato'+i+1+' volte');
-    }else{
+        alert('Boom hai perso punteggio: '+punteggio);
+        i =0;
+    }else {
         numeriUtente.push(InputNumero);
     }
-    
 }
 console.log(numeriUtente);
 function checkArray(arr,num){
