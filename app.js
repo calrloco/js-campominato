@@ -21,13 +21,13 @@ for (var i = 0; i <= 84; i++) {
     break;
 }
 // punteggio var
-var punteggio = i;
+var punteggio = i+1;
   if (numeriPc.includes(InputNumero)) {
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
   } else if (numeriUtente.length == 84) {
-    alert("hai vinto punteggio: " + punteggio);
+    alert("hai vinto punteggio: " + numeriUtente.length);
     location.reload();
     break;
   }
