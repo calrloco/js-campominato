@@ -29,8 +29,9 @@ while (numeriPc.length < 17) {
   }
   i++;
 }
+console.log(numeriPc);
 /// inserisci e confronta numeri
-for (var i = 0; i <= 84; i++) {
+for (var i = 1; i < 84; i++) {
   InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
   if (checkArray(numeriUtente, InputNumero) == false && isNaN(InputNumero)== false) {
     numeriUtente.push(InputNumero);
@@ -40,13 +41,13 @@ for (var i = 0; i <= 84; i++) {
     break;
 }
 // punteggio var
-var punteggio = i+1;
+var punteggio = i;
   if (numeriPc.includes(InputNumero)) {
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
   } else if (numeriUtente.length == 84) {
-    alert("hai vinto punteggio: " + numeriUtente.length);
+    alert("hai vinto punteggio: " + punteggio);
     location.reload();
     break;
   }
