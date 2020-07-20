@@ -14,7 +14,7 @@ for (var i = 0; i <= 84; i++) {
   if (checkArray(numeriUtente, InputNumero) == false && isNaN(InputNumero)== false) {
     numeriUtente.push(InputNumero);
   } else {
-    alert('Iserire un Numero sempre diverso');
+    alert('Iserire un Numero sempre diverso fra 1 e 100');
     location.reload();
     break;
 }
