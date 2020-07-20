@@ -1,8 +1,6 @@
 var numeriPc = [];
 var numeriUtente = [];
 var InputNumero;
-var bool;
-
 var i = 0;
 while (numeriPc.length < 17) {
   if (checkArray(numeriPc, numeriRandom(1, 100)) == false) {
