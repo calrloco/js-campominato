@@ -7,7 +7,6 @@ function numeriRandom(min, max) {
   numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
   return numeroRandom;
 }
-
 var i = 0;
 while (numeriPc.length < 17) {
   if (checkArray(numeriPc, numeriRandom(1, 100)) == false) {
@@ -15,7 +14,6 @@ while (numeriPc.length < 17) {
   }
   i++;
 }
-console.log(numeriPc);
 /// inserisci e confronta numeri
 for (var i = 0; i < 85; i++) {
   InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
