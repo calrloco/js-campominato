@@ -7,45 +7,39 @@ function numeriRandom(min, max) {
   return numeroRandom;
 }
 //push random number
-var i =0;
-while (numeriPc.length < 16){
-    if(checkArray(numeriPc,numeriRandom(1,100))==false){
-       numeriPc.push(numeroRandom);
-    }
-    i++;
+var i = 0;
+while (numeriPc.length < 16) {
+  if (checkArray(numeriPc, numeriRandom(1, 100)) == false) {
+    numeriPc.push(numeroRandom);
+  }
+  i++;
 }
 console.log(numeriPc);
 /// inserisci e confronta numeri
-for(var i=0;i<4;i++){
-    InputNumero = parseInt(prompt('inserisci un numero'));
+for (var i = 0; i < 4; i++) {
+  InputNumero = parseInt(prompt("inserisci un numero"));
+  if (checkArray(numeriUtente, InputNumero) == false) {
     numeriUtente.push(InputNumero);
-    var punteggio = i+1;
-    if (numeriPc.includes(InputNumero)){
-        alert('Boom hai perso punteggio: '+punteggio);
-        location.reload();
-        break;
-    }else if (i  == 3){
-        alert('hai vinto punteggio: '+punteggio);
-        
-    }
+  } else {
+      alert('Numero gia inserito');
+  }
+  var punteggio = i + 1;
+  if (numeriPc.includes(InputNumero)) {
+    alert("Boom hai perso punteggio: " + punteggio);
+    location.reload();
+    break;
+  } else if (i == 3) {
+    alert("hai vinto punteggio: " + punteggio);
+    location.reload();
+    break;
+  }
 }
 console.log(numeriUtente);
-function checkArray(arr,num){
-    for(var i=0;i<arr.length;i++){
-        if(arr[i] == num){
-            return true;
-        }
+function checkArray(arr, num) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] == num) {
+      return true;
     }
-    return false;
+  }
+  return false;
 }
-
-
-
-
-
-
-
-
-
-
-
