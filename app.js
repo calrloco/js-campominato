@@ -1,7 +1,6 @@
 var numeriPc = [];
 var numeriUtente = [];
 var InputNumero;
-var i = 0;
 var difficolta = prompt('iserire difficolta');
 var numeroDifficolta;
 // seleziona difficolta
@@ -16,6 +15,7 @@ switch(difficolta){
        numeroDifficolta = 50;
        break;
 }
+var i = 0;
 while (numeriPc.length < 17) {
   if (checkArray(numeriPc, numeriRandom(1, numeroDifficolta)) == false) {
     numeriPc.push(numeroRandom);
