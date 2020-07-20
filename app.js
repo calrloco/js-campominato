@@ -18,19 +18,18 @@ console.log(numeriPc);
 /// inserisci e confronta numeri
 for (var i = 0; i < 4; i++) {
   InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
-  if (checkArray(numeriUtente, InputNumero) == false) {
+  if (checkArray(numeriUtente, InputNumero) == false && isNaN(InputNumero)== false) {
     numeriUtente.push(InputNumero);
   } else {
-    alert('i numeri non si possono ripetere ricmincia')
-    location.reload();
-    break;
-  }
+    alert('Inserici un numero diverso dal precedente');
+    
+}
   var punteggio = i + 1;
   if (numeriPc.includes(InputNumero)) {
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
-  } else if (i == 3) {
+  } else if (numeriUtente.length == 3) {
     alert("hai vinto punteggio: " + punteggio);
     location.reload();
     break;
