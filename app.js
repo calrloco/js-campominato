@@ -2,7 +2,6 @@ var numeriPc = [];
 var numeriUtente = [];
 var InputNumero;
 var bool;
-
 function numeriRandom(min, max) {
   numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
   return numeroRandom;
@@ -17,7 +16,7 @@ while (numeriPc.length < 3) {
 }
 console.log(numeriPc);
 /// inserisci e confronta numeri
-for (var i = 0; i < 85; i++) {
+for (var i = 0; i < 3; i++) {
   InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
   if (checkArray(numeriUtente, InputNumero) == false && isNaN(InputNumero)== false) {
     numeriUtente.push(InputNumero);
@@ -25,12 +24,12 @@ for (var i = 0; i < 85; i++) {
     alert('Inserici un NUMERO diverso dal precedente');
 }
 // punteggio var
-var punteggio = i + 1;
+var punteggio = i;
   if (numeriPc.includes(InputNumero)) {
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
-  } else if (numeriUtente.length == 84) {
+  } else if (numeriUtente.length == 3) {
     alert("hai vinto punteggio: " + punteggio);
     location.reload();
     break;
