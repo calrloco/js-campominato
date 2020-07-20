@@ -8,7 +8,7 @@ function numeriRandom(min, max) {
 }
 //push random number
 var i = 0;
-while (numeriPc.length < 16) {
+while (numeriPc.length < 3) {
   if (checkArray(numeriPc, numeriRandom(1, 100)) == false) {
     numeriPc.push(numeroRandom);
   }
@@ -21,7 +21,7 @@ for (var i = 0; i < 4; i++) {
   if (checkArray(numeriUtente, InputNumero) == false && isNaN(InputNumero)== false) {
     numeriUtente.push(InputNumero);
   } else {
-    alert('Inserici un numero diverso dal precedente');
+    alert('Inserici un NUMERO diverso dal precedente');
     
 }
   var punteggio = i + 1;
