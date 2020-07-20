@@ -2,13 +2,15 @@ var numeriPc = [];
 var numeriUtente = [];
 var InputNumero;
 var bool;
+var difficoltaSelezioneta = prompt('seleziona difficolta')
+var difficolta;
 function numeriRandom(min, max) {
   numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
   return numeroRandom;
 }
 //push random number
 var i = 0;
-while (numeriPc.length < 3) {
+while (numeriPc.length < 17) {
   if (checkArray(numeriPc, numeriRandom(1, 100)) == false) {
     numeriPc.push(numeroRandom);
   }
