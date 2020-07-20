@@ -17,11 +17,13 @@ while (numeriPc.length < 16) {
 console.log(numeriPc);
 /// inserisci e confronta numeri
 for (var i = 0; i < 4; i++) {
-  InputNumero = parseInt(prompt("inserisci un numero"));
+  InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
   if (checkArray(numeriUtente, InputNumero) == false) {
     numeriUtente.push(InputNumero);
   } else {
-      alert('Numero gia inserito');
+    alert('i numeri non si possono ripetere ricmincia')
+    location.reload();
+    break;
   }
   var punteggio = i + 1;
   if (numeriPc.includes(InputNumero)) {
