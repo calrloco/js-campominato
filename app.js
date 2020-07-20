@@ -7,6 +7,7 @@ function numeriRandom(min, max) {
   numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
   return numeroRandom;
 }
+
 var i = 0;
 while (numeriPc.length < 17) {
   if (checkArray(numeriPc, numeriRandom(1, 100)) == false) {
@@ -26,7 +27,7 @@ for (var i = 0; i < 85; i++) {
     break;
 }
 // punteggio var
-var punteggio = i;
+var punteggio = i+1;
   if (numeriPc.includes(InputNumero)) {
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
