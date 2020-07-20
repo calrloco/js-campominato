@@ -7,16 +7,24 @@ function numeriRandom(min, max) {
   return numeroRandom;
 }
 //push random number
-for(var i=0;i<16;i++){
-  numeriPc.push(numeriRandom(1,16));
+var i =0;
+while (numeriPc.length < 16){
+    if(checkArray(numeriPc,numeriRandom(1,16))==false){
+       numeriPc.push(numeroRandom);
+    }
+    i++;
 }
+
 console.log(numeriPc);
 
-for (var i =0;i<10;i++){
-    var numeroutente = parseInt(prompt('inserisci un numero'));
-    if(numeroutente == )
+function checkArray(arr,num){
+    for(var i=0;i<arr.length;i++){
+        if(arr[i] == num){
+            return true
+        }
+    }
+    return false;
 }
-
 
 
 
