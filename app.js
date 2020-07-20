@@ -22,7 +22,8 @@ for(var i=0;i<4;i++){
     var punteggio = i+1;
     if (numeriPc.includes(InputNumero)){
         alert('Boom hai perso punteggio: '+punteggio);
-        i =0;
+        location.reload();
+        break;
     }else if (i  == 3){
         alert('hai vinto punteggio: '+punteggio);
         
