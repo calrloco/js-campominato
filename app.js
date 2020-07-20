@@ -15,14 +15,15 @@ while (numeriPc.length < 16){
     i++;
 }
 console.log(numeriPc);
-for(var i=0;i<10;i++){
+for(var i=0;i<4;i++){
     InputNumero = parseInt(prompt('inserisci un numero'));
     var punteggio = i+1;
     if (numeriPc.includes(InputNumero)){
         alert('Boom hai perso punteggio: '+punteggio);
         i =0;
-    }else {
-        numeriUtente.push(InputNumero);
+    }else if (i  == 3){
+        alert('hai vinto punteggio: '+punteggio);
+        
     }
 }
 console.log(numeriUtente);
