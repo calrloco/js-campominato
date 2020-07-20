@@ -2,11 +2,7 @@ var numeriPc = [];
 var numeriUtente = [];
 var InputNumero;
 var bool;
-var difficolta = prompt('inserisci la difficolta')
-function numeriRandom(min, max) {
-  numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
-  return numeroRandom;
-}
+
 var i = 0;
 while (numeriPc.length < 17) {
   if (checkArray(numeriPc, numeriRandom(1, 100)) == false) {
@@ -44,4 +40,8 @@ function checkArray(arr, num) {
     }
   }
   return false;
+}
+function numeriRandom(min, max) {
+    numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
+    return numeroRandom;
 }
