@@ -17,25 +17,27 @@ while (numeriPc.length < 3) {
 }
 console.log(numeriPc);
 /// inserisci e confronta numeri
-for (var i = 0; i < 84; i++) {
+for (var i = 0; i < 85; i++) {
   InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
   if (checkArray(numeriUtente, InputNumero) == false && isNaN(InputNumero)== false) {
     numeriUtente.push(InputNumero);
   } else {
     alert('Inserici un NUMERO diverso dal precedente');
 }
+// punteggio var
 var punteggio = i + 1;
   if (numeriPc.includes(InputNumero)) {
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
-  } else if (numeriUtente.length == 3) {
+  } else if (numeriUtente.length == 84) {
     alert("hai vinto punteggio: " + punteggio);
     location.reload();
     break;
   }
 }
 console.log(numeriUtente);
+// controllo array per push
 function checkArray(arr, num) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] == num) {
