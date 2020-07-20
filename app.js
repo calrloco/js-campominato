@@ -2,12 +2,27 @@ var numeriPc = [];
 var numeriUtente = [];
 var InputNumero;
 var i = 0;
+var difficolta = prompt('iserire difficolta');
+var numeroDifficolta;
+// seleziona difficolta
+switch(difficolta){
+    case '0':
+       numeroDifficolta = 100;
+       break;
+       case '1':
+       numeroDifficolta = 80;
+       break;
+       case '2':
+       numeroDifficolta = 50;
+       break;
+}
 while (numeriPc.length < 17) {
-  if (checkArray(numeriPc, numeriRandom(1, 100)) == false) {
+  if (checkArray(numeriPc, numeriRandom(1, numeroDifficolta)) == false) {
     numeriPc.push(numeroRandom);
   }
   i++;
 }
+console.log(numeriPc);
 /// inserisci e confronta numeri
 for (var i = 0; i <= 84; i++) {
   InputNumero = parseInt(prompt("inserisci un numero sempre diverso fra 1 e 100"));
