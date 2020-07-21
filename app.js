@@ -47,11 +47,11 @@ for (var i = 1; i < 85; i++) {
   // punteggio var
   var punteggio = i;
   if (checkArray(numeriPc, InputNumero) == true) {
-    alert("Boom hai perso punteggio: " + punteggio);
+    alert("Boom hai perso con tentativi: " + punteggio);
     location.reload();
     break;
   } else if (numeriUtente.length == 84) {
-    alert("hai vinto punteggio: " + punteggio);
+    alert("hai vinto con tentativi: " + punteggio);
     location.reload();
     break;
   }
