@@ -50,7 +50,9 @@ for (var i = 0; i < range; i++) {
   );
   if (
     checkArray(numeriUtente, InputNumero) == false &&
-    isNaN(InputNumero) == false && InputNumero > 0 && InputNumero <= 100
+    isNaN(InputNumero) == false &&
+    InputNumero > 0 &&
+    InputNumero <= 100
   ) {
     numeriUtente.push(InputNumero);
   } else {
