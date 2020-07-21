@@ -3,6 +3,7 @@ var numeriUtente = [];
 var InputNumero;
 var difficolta = prompt("iserire difficolta 0=facile 1=media 2=diffcile");
 var numeroDifficolta;
+// array per selezionare difficolta random
 var randomDifficolta = [100,50,80];
 // seleziona difficolta
 switch (difficolta) {
@@ -20,6 +21,7 @@ switch (difficolta) {
     break;
 
   default:
+    // numero difficolta e un numero casuale che trova l'elemeto all'indice 0/1/2 dell'array diff;
     numeroDifficolta = randomDifficolta[numeriRandom(0,2)];
     var messaggioDifficoltaRandom;
     if(numeroDifficolta==randomDifficolta[0]){
@@ -39,6 +41,7 @@ while (numeriPc.length < 16) {
     numeriPc.push(numeroRandom);
   }
 }
+console.log(numeriPc);
 /// inserisci e confronta numeri
 for (var i = 0; i < 84; i++) {
   InputNumero = parseInt(
