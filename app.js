@@ -43,9 +43,8 @@ while (numeriPc.length < 16) {
   }
 }
 // var range
-var range = numeroDifficolta - 16;
 /// inserisci e confronta numeri
-for (var i = 0; i < range; i++) {
+for (var i = 0; i < 84; i++) {
   InputNumero = parseInt(
     prompt("inserisci un numero sempre diverso fra 1 e 100")
   );
