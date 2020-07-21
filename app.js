@@ -42,7 +42,6 @@ while (numeriPc.length < 16) {
     numeriPc.push(numeroRandom);
   }
 }
-// var range
 /// inserisci e confronta numeri
 for (var i = 0; i < 84; i++) {
   InputNumero = parseInt(
