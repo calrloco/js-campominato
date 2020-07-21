@@ -29,7 +29,6 @@ while (numeriPc.length < 16) {
     numeriPc.push(numeroRandom);
   }
 }
-console.log(numeriPc);
 /// inserisci e confronta numeri
 for (var i = 1; i < 85; i++) {
   InputNumero = parseInt(
