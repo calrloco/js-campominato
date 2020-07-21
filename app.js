@@ -41,6 +41,7 @@ while (numeriPc.length < 16) {
     numeriPc.push(numeroRandom);
   }
 }
+console.log(numeriPc);
 // variabile per range di possibilita 
 var range = numeroDifficolta - 16;
 /// inserisci e confronta numeri
@@ -63,11 +64,17 @@ for (var i = 0; i < range; i++) {
   }
   // condizioni vittoria
   if (checkArray(numeriPc, InputNumero) == true) {
+    /* se perdi avendo inserito solo un numero il punteggio
+     e zero, senno il primo numero viene contato come punteggio*/
+    if(numeriUtente.length == 1 ){
     alert("Boom hai perso punteggio: " + i);
+  }else{
+    alert("Boom hai perso punteggio: " + numeriUtente.length);
+  }
     location.reload();
     break;
   } else if (numeriUtente.length == range) {
-    alert("hai vinto punteggio: " + i);
+    alert("hai vinto punteggio: " + numeriUtente.length);
     location.reload();
     break;
   }
