@@ -56,8 +56,7 @@ for (var i = 0; i < range; i++) {
     numeriUtente.push(InputNumero);
   } else {
     alert("Iserire un Numero sempre diverso fra 1 e 100");
-    location.reload();
-    break;
+    i--;
   }
   // punteggio var
   if (checkArray(numeriPc, InputNumero) == true) {
