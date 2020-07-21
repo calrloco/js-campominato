@@ -23,7 +23,7 @@ switch(difficolta){
           alert('Difficolta non selezionata selezionata automaticamete dal Pc difficolta facile');
 }
 var i = 0;
-while (numeriPc.length < 17) {
+while (numeriPc.length < 16) {
   if (checkArray(numeriPc, numeriRandom(1, numeroDifficolta)) == false) {
     numeriPc.push(numeroRandom);
   }
