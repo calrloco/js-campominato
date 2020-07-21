@@ -42,7 +42,7 @@ while (numeriPc.length < 16) {
     numeriPc.push(numeroRandom);
   }
 }
-var range = numeroDifficolta -16;
+var range = numeroDifficolta - 16;
 /// inserisci e confronta numeri
 for (var i = 0; i < range; i++) {
   InputNumero = parseInt(
