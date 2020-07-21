@@ -46,7 +46,7 @@ for (var i = 1; i < 85; i++) {
   }
   // punteggio var
   var punteggio = i;
-  if (numeriPc.includes(InputNumero)) {
+  if (checkArray(numeriPc, InputNumero) == true) {
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
