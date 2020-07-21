@@ -3,6 +3,7 @@ var numeriUtente = [];
 var InputNumero;
 var difficolta = prompt("iserire difficolta 0=facile 1=media 2=diffcile");
 var numeroDifficolta;
+var randomDifficolta = [100,50,80];
 // seleziona difficolta
 switch (difficolta) {
   case "0":
@@ -19,11 +20,20 @@ switch (difficolta) {
     break;
 
   default:
-    numeroDifficolta = 100;
+    numeroDifficolta = randomDifficolta[numeriRandom(0,2)];
+    var messaggioDifficoltaRandom;
+    if(numeroDifficolta==randomDifficolta[0]){
+      messaggioDifficoltaRandom = 'Facile';
+    }else if (numeroDifficolta==randomDifficolta[1]){
+      messaggioDifficoltaRandom = 'Difficile';
+    }else{
+      messaggioDifficoltaRandom = 'Media';
+    }
     alert(
-      "Difficolta non selezionata selezionata automaticamete dal Pc difficolta facile"
+      "Difficolta non selezionata selezionata automaticamete dal Pc: "+ messaggioDifficoltaRandom 
     );
 }
+console.log(numeroDifficolta);
 while (numeriPc.length < 16) {
   if (checkArray(numeriPc, numeriRandom(1, numeroDifficolta)) == false) {
     numeriPc.push(numeroRandom);
