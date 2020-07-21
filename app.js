@@ -42,8 +42,9 @@ while (numeriPc.length < 16) {
     numeriPc.push(numeroRandom);
   }
 }
+var range = numeroDifficolta -16;
 /// inserisci e confronta numeri
-for (var i = 0; i < 84; i++) {
+for (var i = 0; i < range; i++) {
   InputNumero = parseInt(
     prompt("inserisci un numero sempre diverso fra 1 e 100")
   );
@@ -63,7 +64,7 @@ for (var i = 0; i < 84; i++) {
     alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
-  } else if (numeriUtente.length == 84) {
+  } else if (numeriUtente.length == range) {
     alert("hai vinto punteggio: " + punteggio);
     location.reload();
     break;
