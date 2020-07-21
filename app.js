@@ -36,7 +36,6 @@ switch (difficolta) {
         messaggioDifficoltaRandom
     );
 }
-console.log(numeroDifficolta);
 while (numeriPc.length < 16) {
   if (checkArray(numeriPc, numeriRandom(1, numeroDifficolta)) == false) {
     numeriPc.push(numeroRandom);
@@ -61,13 +60,12 @@ for (var i = 0; i < range; i++) {
     break;
   }
   // punteggio var
-  var punteggio = i;
   if (checkArray(numeriPc, InputNumero) == true) {
-    alert("Boom hai perso punteggio: " + punteggio);
+    alert("Boom hai perso punteggio: " + i);
     location.reload();
     break;
   } else if (numeriUtente.length == range) {
-    alert("hai vinto punteggio: " + punteggio);
+    alert("hai vinto punteggio: " + i);
     location.reload();
     break;
   }
