@@ -21,7 +21,7 @@ switch (difficolta) {
     break;
 
   default:
-    // numero difficolta e un numero casuale che trova l'elemeto all'indice dell'array diff//
+    // se non si seleziona una delle scelte difficolata random ///
     numeroDifficolta = randomDifficolta[numeriRandom(0, 2)];
     var messaggioDifficoltaRandom;
     if (numeroDifficolta == randomDifficolta[0]) {
