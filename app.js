@@ -41,12 +41,14 @@ while (numeriPc.length < 16) {
     numeriPc.push(numeroRandom);
   }
 }
+// variabile per range di possibilita 
 var range = numeroDifficolta - 16;
 /// inserisci e confronta numeri
 for (var i = 0; i < range; i++) {
   InputNumero = parseInt(
     prompt("inserisci un numero sempre diverso fra 1 e 100")
   );
+  // condizioni inserimanto numero
   if (
     checkArray(numeriUtente, InputNumero) == false &&
     isNaN(InputNumero) == false &&
@@ -59,7 +61,7 @@ for (var i = 0; i < range; i++) {
     alert("Iserire un Numero sempre diverso fra 1 e 100");
     i--;
   }
-  // punteggio var
+  // condizioni vittoria
   if (checkArray(numeriPc, InputNumero) == true) {
     alert("Boom hai perso punteggio: " + i);
     location.reload();
