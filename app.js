@@ -30,7 +30,7 @@ while (numeriPc.length < 16) {
   }
 }
 /// inserisci e confronta numeri
-for (var i = 1; i < 85; i++) {
+for (var i = 0; i < 84; i++) {
   InputNumero = parseInt(
     prompt("inserisci un numero sempre diverso fra 1 e 100")
   );
@@ -47,11 +47,11 @@ for (var i = 1; i < 85; i++) {
   // punteggio var
   var punteggio = i;
   if (checkArray(numeriPc, InputNumero) == true) {
-    alert("Boom hai perso con tentativi: " + punteggio);
+    alert("Boom hai perso punteggio: " + punteggio);
     location.reload();
     break;
   } else if (numeriUtente.length == 84) {
-    alert("hai vinto con tentativi: " + punteggio);
+    alert("hai vinto punteggio: " + punteggio);
     location.reload();
     break;
   }
